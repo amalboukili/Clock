@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Clock } from './clock/Clock';
+import MyComponent from './events/MyComponent';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         </div>
         <p className="App-intro">Hi! my name is {this.props.name}</p>
         <Clock />
+        <MyComponent />
       </div>
     );
   }
