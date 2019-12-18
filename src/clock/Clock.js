@@ -7,10 +7,10 @@ export class Clock extends Component {
     this.state = {
       time: new Date().toLocaleString(),
     };
-    this.updateClock = this.updateClock.bind(this);
+    // this.updateClock = this.updateClock.bind(this);
   }
   componentDidMount() {
-    this.intervalID = setInterval(this.updateClock, 1000);
+    this.intervalID = setInterval(() => this.updateClock(), 1000);
   }
   componentWillUnmount() {
     clearInterval(this.intervalID);
