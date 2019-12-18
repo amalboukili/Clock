@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Clock } from './clock/Clock';
 import MyComponent from './events/MyComponent';
+import ColoredBlock from './events/ColoredBlock';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <p className="App-intro">Hi! my name is {this.props.name}</p>
         <Clock />
         <MyComponent />
+        <ColoredBlock />
       </div>
     );
   }
